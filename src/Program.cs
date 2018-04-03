@@ -19,6 +19,14 @@ namespace ByteBank
 
             Console.WriteLine(conta.titular);
 
+            Console.WriteLine("Saldo : " + conta.saldo);
+
+            conta.saldo += 100;
+            Console.WriteLine("Novo saldo : " + conta.saldo);
+
+            conta.saldo = 10;
+            Console.WriteLine("Novo saldo : " + conta.saldo);
+
             Console.ReadLine();
         }
     }

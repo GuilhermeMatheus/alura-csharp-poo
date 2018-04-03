@@ -4,6 +4,8 @@ namespace _06_ByteBank_Construtores
 {
     public class ContaCorrente
     {
+        public static int NumeroDeContasCriadas { get; private set; }
+
         private int _numero;
         private int _agencia;
         private double _saldo;
@@ -17,7 +19,7 @@ namespace _06_ByteBank_Construtores
             }
             set
             {
-                if (_numero <= 0)
+                if (value <= 0)
                 {
                     Console.WriteLine("Não é permitido número menor ou igual a 0");
                     return;
@@ -33,7 +35,7 @@ namespace _06_ByteBank_Construtores
             }
             set
             {
-                if (_agencia <= 0)
+                if (value <= 0)
                 {
                     Console.WriteLine("Não é permitido agencia menor ou igual a 0");
                     return;
@@ -68,6 +70,8 @@ namespace _06_ByteBank_Construtores
         {
             Numero = numero;
             Agencia = agencia;
+
+            NumeroDeContasCriadas++;
         }
 
         public void Deposita(double valor)

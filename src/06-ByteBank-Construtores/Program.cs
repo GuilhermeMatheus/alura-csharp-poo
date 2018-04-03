@@ -10,8 +10,18 @@ namespace _06_ByteBank_Construtores
     {
         static void Main(string[] args)
         {
+            Console.WriteLine(ContaCorrente.NumeroDeContasCriadas);
             // ContaCorrente conta = new ContaCorrente(); dá erro
-            ContaCorrente conta = new ContaCorrente(0, 0);
+            ContaCorrente conta = new ContaCorrente(444, 44444);
+
+            // não compila:
+            // Console.WriteLine(conta.NumeroDeContasCriadas)
+
+            Console.WriteLine(ContaCorrente.NumeroDeContasCriadas);
+
+            ContaCorrente contaBruno = new ContaCorrente(555, 55555);
+
+            Console.WriteLine(ContaCorrente.NumeroDeContasCriadas);
 
             Console.ReadLine();
         }

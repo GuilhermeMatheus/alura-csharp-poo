@@ -27,6 +27,15 @@ namespace ByteBank
             conta.saldo = 10;
             Console.WriteLine("Novo saldo : " + conta.saldo);
 
+            Console.WriteLine();
+
+            ContaCorrente contaDoBruno = new ContaCorrente();
+            contaDoBruno.titular = "Bruno";
+
+            Console.WriteLine(contaDoBruno.titular);
+            Console.WriteLine("saldo : " + contaDoBruno.saldo);
+            Console.WriteLine("agencia : " + contaDoBruno.agencia);
+
             Console.ReadLine();
         }
     }

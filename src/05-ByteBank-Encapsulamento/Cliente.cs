@@ -12,31 +12,38 @@ namespace _05_ByteBank_Encapsulamento
         private string _cpf;
         private string _profissao;
 
-        public string GetNome()
+        public string Nome
         {
-            return _nome; // olha só, o this não é obrigatório
+            get
+            {
+                return _nome;
+            }
+            set
+            {
+                _nome = value;
+            }
         }
-        public void SetNome(string nome)
+        public string Cpf
         {
-            this._nome = nome;
+            get
+            {
+                return _cpf;
+            }
+            set
+            {
+                _cpf = value;
+            }
         }
-
-        public string GetCpf()
+        public string Profissao
         {
-            return _cpf;
-        }
-        public void SetCpf(string cpf)
-        {
-            this._cpf = cpf;
-        }
-
-        public string GetProfissao()
-        {
-            return _profissao;
-        }
-        public void SetProfissao(string profissao)
-        {
-            this._profissao = profissao;
+            get
+            {
+                return _profissao;
+            }
+            set
+            {
+                _profissao = value;
+            }
         }
     }
 }

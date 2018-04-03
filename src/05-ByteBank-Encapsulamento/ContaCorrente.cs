@@ -7,6 +7,51 @@
         private double _saldo;
         private Cliente _titular;
 
+        public int Numero
+        {
+            get
+            {
+                return _numero;
+            }
+            set
+            {
+                _numero = value;
+            }
+        }
+        public int Agencia
+        {
+            get
+            {
+                return _agencia;
+            }
+            set
+            {
+                _agencia = value;
+            }
+        }
+        public double Saldo
+        {
+            get
+            {
+                return _saldo;
+            }
+            set
+            {
+                _saldo = value;
+            }
+        }
+        public Cliente Titular
+        {
+            get
+            {
+                return _titular;
+            }
+            set
+            {
+                _titular = value;
+            }
+        }
+
         public void Deposita(double valor)
         {
             this._saldo += valor;
@@ -43,33 +88,5 @@
 
             return false;
         }
-
-        public int GetNumero()
-        {
-            return _numero;
-        }
-        public void SetNumero(int numero)
-        {
-            this._numero = numero;
-        }
-
-        public int GetAgencia()
-        {
-            return _agencia;
-        }
-        public void SetAgencia(int agencia)
-        {
-            this._agencia = agencia;
-        }
-
-        public Cliente GetTitular()
-        {
-            return _titular;
-        }
-        public void SetTitular(Cliente titular)
-        {
-            this._titular = titular;
-        }
-
     }
 }

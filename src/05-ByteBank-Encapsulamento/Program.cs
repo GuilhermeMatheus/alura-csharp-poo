@@ -12,17 +12,17 @@ namespace _05_ByteBank_Encapsulamento
         {
             Cliente cliente = new Cliente();
 
-            cliente.SetNome("Gabriela");
-            cliente.SetCpf("444.444.444-44");
-            cliente.SetProfissao("Gerente de TI");
+            cliente.Nome = "Gabriela";
+            cliente.Cpf = "444.444.444-44";
+            cliente.Profissao = "Gerente de TI";
 
             ContaCorrente contaGabriela = new ContaCorrente();
-            contaGabriela.SetTitular(cliente);
-            contaGabriela.SetAgencia(444);
-            contaGabriela.SetNumero(444444);
+            contaGabriela.Titular = cliente;
+            contaGabriela.Agencia = 444;
+            contaGabriela.Numero = 444444;
 
-            Console.WriteLine("cliente.GetNome(): " + cliente.GetNome());
-            Console.WriteLine("contaGabriela.GetTitular().GetNome(): " + contaGabriela.GetTitular().GetNome());
+            Console.WriteLine("cliente.GetNome(): " + cliente.Nome);
+            Console.WriteLine("contaGabriela.GetTitular().GetNome(): " + contaGabriela.Titular.Nome);
 
             Console.WriteLine();
 

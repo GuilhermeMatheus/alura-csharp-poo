@@ -2,21 +2,21 @@
 {
     public class ContaCorrente
     {
-        public int numero;
-        public int agencia;
-        public double saldo;
-        public Cliente titular;
+        private int _numero;
+        private int _agencia;
+        private double _saldo;
+        private Cliente _titular;
 
         public void Deposita(double valor)
         {
-            this.saldo += valor;
+            this._saldo += valor;
         }
 
         public bool Saca(double valor)
         {
-            if (this.saldo >= valor)
+            if (this._saldo >= valor)
             {
-                this.saldo -= valor;
+                this._saldo -= valor;
                 return true;
             }
             return false;
@@ -46,29 +46,29 @@
 
         public int GetNumero()
         {
-            return numero;
+            return _numero;
         }
         public void SetNumero(int numero)
         {
-            this.numero = numero;
+            this._numero = numero;
         }
 
         public int GetAgencia()
         {
-            return agencia;
+            return _agencia;
         }
         public void SetAgencia(int agencia)
         {
-            this.agencia = agencia;
+            this._agencia = agencia;
         }
 
         public Cliente GetTitular()
         {
-            return titular;
+            return _titular;
         }
         public void SetTitular(Cliente titular)
         {
-            this.titular = titular;
+            this._titular = titular;
         }
 
     }

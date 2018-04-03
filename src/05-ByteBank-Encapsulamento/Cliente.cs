@@ -8,35 +8,35 @@ namespace _05_ByteBank_Encapsulamento
 {
     public class Cliente
     {
-        public string nome;
-        public string cpf;
-        public string profissao;
+        private string _nome;
+        private string _cpf;
+        private string _profissao;
 
         public string GetNome()
         {
-            return nome; // olha só, o this não é obrigatório
+            return _nome; // olha só, o this não é obrigatório
         }
         public void SetNome(string nome)
         {
-            this.nome = nome;
+            this._nome = nome;
         }
 
         public string GetCpf()
         {
-            return cpf;
+            return _cpf;
         }
         public void SetCpf(string cpf)
         {
-            this.cpf = cpf;
+            this._cpf = cpf;
         }
 
         public string GetProfissao()
         {
-            return profissao;
+            return _profissao;
         }
         public void SetProfissao(string profissao)
         {
-            this.profissao = profissao;
+            this._profissao = profissao;
         }
     }
 }
